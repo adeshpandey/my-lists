@@ -1,0 +1,15 @@
+<template name="accounts">
+{{#if registerClicked }}
+{{>register}}
+{{else}}
+{{#if forgotClicked}}
+{{>forgotPass}}
+{{else}}
+{{#if resetToken}}
+{{>changePassword}}
+{{else}}
+{{>login}}
+{{/if}}
+{{/if}}
+{{/if}}    
+</template>
